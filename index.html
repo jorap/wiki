@@ -12,6 +12,15 @@ p,
     margin: 0.25rem 0;
 }
 
+:focus {
+    outline: 2px solid #a9a9a9;
+	outline-offset: -2px;
+}
+
+summary:focus {
+    outline: none;
+}
+
 .pb {
     margin: 0 0 0.5rem!important;
 }
@@ -22,7 +31,35 @@ footer span.fr {
 
 time abbr[title] {
     text-decoration: none;
-}</style> <script id=p type=application/json>{"A":"JoRap's Wiki","B":"Sustainable Online Publishing Workflow","G":[{"C":"x(}1(tKRW","A":"Home","D":"home","E":1709771823847,"F":1709771831303}],"H":{},"I":true,"J":true,"K":"x(}1(tKRW","_":{"A":"name","B":"desc","C":"id","D":"slug","E":"cd","F":"md","G":"pages","H":"img","I":"static","J":"published","K":"home"}}</script> <script id=a>(()=>{function Fa(a){if(!a)return"";var c=[],b=0,l=[],k=0,f=a.length;"\n"!==a[f-1]&&"\n"!==a[f-2]&&(a+="\n\n");a=a.replace(/\\(.)/g,(e,d)=>L[d]||e).replace(/```(.*)\n([^\0]+?)```(?!```)/gm,(e,d,h)=>(c[b]={lang:d,block:H(h)},`{code-${b++}}`)).replace(/`([^`]+?)`/g,(e,d)=>`<code>${H(d)}</code>`).replace(/<([^>\s]+(\/\/|@)[^>\s]+)>/g,(e,d,h)=>`[${d}](${"@"===h?"mailto:":""}${d})`).replace(/(!?)\[([^\]]*?)\]\(([^\s\n]*)(?:| "(.*)")\)/gm,(e,d,h,g,m)=>{h=H(h);try{g=decodeURI(g)}catch(p){}return g=encodeURI(g),
+}
+
+nav.n li a {
+	padding: 3px;
+}
+
+.tabs>* {
+    border: 2px solid #65A;
+    border-bottom: 0;
+    border-radius: 0.5rem;
+    margin: 0;
+}
+
+button, summary:is(.np,.b) {
+    color: #fff;
+    background-color: #000000;
+	font-weight: bold;
+}
+
+.a {
+    background: gray;
+    color: #fff;
+	font-weight: bold;
+}
+
+a {
+    color: #000000;
+	font-weight: bold;
+}</style> <script id=p type=application/json>{"A":"JoRap's Wiki","B":"Sustainable Online Publishing Workflow","H":[{"C":"x(}1(tKRW","A":"Home","D":"home","E":1709771823847,"F":1709771831303},{"C":"|R3OZ+WvZ","A":"Subpage","D":"subpage","E":1709830152757,"G":"x(}1(tKRW","F":1709830159214}],"I":{},"J":true,"K":true,"L":"x(}1(tKRW","_":{"A":"name","B":"desc","C":"id","D":"slug","E":"cd","F":"md","G":"parent","H":"pages","I":"img","J":"static","K":"published","L":"home"}}</script> <script id=a>(()=>{function Fa(a){if(!a)return"";var c=[],b=0,l=[],k=0,f=a.length;"\n"!==a[f-1]&&"\n"!==a[f-2]&&(a+="\n\n");a=a.replace(/\\(.)/g,(e,d)=>L[d]||e).replace(/```(.*)\n([^\0]+?)```(?!```)/gm,(e,d,h)=>(c[b]={lang:d,block:H(h)},`{code-${b++}}`)).replace(/`([^`]+?)`/g,(e,d)=>`<code>${H(d)}</code>`).replace(/<([^>\s]+(\/\/|@)[^>\s]+)>/g,(e,d,h)=>`[${d}](${"@"===h?"mailto:":""}${d})`).replace(/(!?)\[([^\]]*?)\]\(([^\s\n]*)(?:| "(.*)")\)/gm,(e,d,h,g,m)=>{h=H(h);try{g=decodeURI(g)}catch(p){}return g=encodeURI(g),
 m=m?` title="${H(m)}"`:"",d?`<img src="${g}" alt="${h}"${m}>`:`<a href="${g}"${m}>${h}</a>`}).replace(/(<\/?[a-zA-Z]+[^>]*>)/gm,(e,d)=>(l[k]=d,`{html-${k++}}`)).replace(/^[ \t]*>+ (.*)/gm,"<blockquote>\n$1\n</blockquote>").replace(/(<\/blockquote>\n?<blockquote>)+?/g,"").replace(/^(#+) +(.*)/gm,(e,d,h)=>`<h${d.length}>${h}</h${d.length}>`).replace(/^([^\n\t ])(.*)\n====+/gm,"<h1>$1$2</h1>").replace(/^([^\n\t ])(.*)\n----+/gm,"<h2>$1$2</h2>").replace(/\n( *[-*]){3,}\n/gm,"<hr>").replace(/\[( |x)\]/g,
 (e,d)=>`<input type="checkbox" disabled${"x"===d.toLowerCase()?" checked":""}>`).replace(/  +\n/gm,"<br>").replace(/^([^-\+\*\d<\t \n])([^]*?)(?:\n\n)/gm,(e,d,h)=>`<p>${d}${h}</p>
 `).replace(/^([\t ]*)(?:(-|\+|\*)|(\d+(?:\)|\.))) (.*)/gm,(e,d,h,g,m)=>{d=d.replace(/  /g,"\t");e=g?"o":"u";return`${d}<${e}l><li>${m}</li></${e}l>`});for(f=/<\/li><\/(u|o)l>\n(\t+)<(u|o)l><li>(.*)<\/li><\/(u|o)l>/;a.match(f);)a=a.replace(f,function(e,d,h,g,m,p){return 0<h.length&&(h=h.substring(1),0<h.length&&(h="\n"+h)),`${h}<${g}l><li>${m}</li></${p}l></li></${d}l>`});a=a.replace(/(<\/ul>\n?[ \t]*<ul>)+?/g,"").replace(/(<\/ol>\n?[ \t]*<ol>)+?/g,"").replace(/\*\*([^\n*]+?)\*\*/g,"<strong>$1</strong>").replace(/__([^\n_]+?)__/g,
@@ -124,4 +161,4 @@ a.map(c=>c.trim()).filter((c,b,l)=>c.length&&l.indexOf(c)===b).sort();FW.xtr=fun
 {let d=a.views.p(f,"",e);return d[0].querySelector("h1").id="page="+e.slug,html`<article> ${d[0]} <div class=uc>${html.raw(d[1][1].innerHTML)}</div> </article>`})} </section>`}let {c:b,p:l,j:k}=a;return`<!doctype html> <html lang=en> <head> <meta charset=utf-8> <meta name=viewport content="width=device-width,initial-scale=1"> <title>${l.name}</title> ${l.desc?`<meta name="description" content="${l.desc.replace(/"/g,'\\"')}">`:""} <meta name=version content=Warbler_1.7.1> <meta name=application-name content="Feather Wiki"> <style id=s>${document.getElementById("s").innerHTML}</style> ${b?
 `<style id=c>${b}</style>`:""} <script id=p type=application/json>${JSON.stringify(FW.json.compress(l))}<\/script> <script id=a>${document.getElementById("a").innerHTML}<\/script> ${FW.inject.esc(l.head,!0)} </head> <body> ${(function(){let f=I(E({},a),{edit:!1,sb:!0,sbx:new Set,pg:void 0,query:{page:"a"},p:I(E({},l),{published:!0})}),e=Aa(f);if(e.querySelector(".sb .tabs").remove(),l.static){let d=e.querySelector("main>section");d.parentElement.replaceChild(c(f),d);e.querySelector(".sb>nav>ul>li:last-child,.sbt").remove()}return e.querySelectorAll("a").forEach(d=>
 {d.classList.remove("a");d.href=d.href.includes("#")?d.href.replace(/.+(#.+)$/,"$1"):d.href.includes("page=")?d.href.replace(/.+(page=.+)(&.+)*?$/,l.static?"#$1":"?$1"):d.href.replace(location.toString().split("?")[0],"")}),e.querySelector("main").outerHTML})()} <footer><a href=https://src.feather.wiki/#versions>JavaScript required to edit</a></footer> ${k?`<script id=j>${k}<\/script>`:""} </body> </html>`};FW.img=Ba;FW.hash=Ca;FW.inject=Da;FW.json=Ea;FW.upload=(a,c)=>{a=html`<input type=file accept=${a} onchange=${b=>
-{b=b.target.files;0<b.length&&c(b[0])}}>`;document.body.appendChild(a);a.click();document.body.removeChild(a)};FW.ready(()=>{Eb(FW.state);Fb(FW.state,FW.emitter)});FW._view=Aa;FW.mount("body");window.addEventListener("beforeunload",a=>{if(FW.state.changed)return a.preventDefault(),a.returnValue="Lose unsaved changes?"},{capture:!0})})(); </script>  </head> <body> <main> <div class="sb"> <span class="db"><a href="?" class="t">JoRap's Wiki</a></span> <p class="pb">Sustainable Online Publishing Workflow</p>  <nav class="">  <ul> <li> <a href="#page=home" class="">Home</a></li> <li><a href="#page=a">All Pages</a></li></ul></nav></div> <section> <article> <header> <div class="r ns"> <h1 class="c" id="page=home">Home</h1> <div class="c w14 tr"> <time datetime="2024-03-07T00:37:11.303Z"> <abbr title="Created: 3/7/2024, 8:37:03 AM">3/7/2024, 8:37:11 AM</abbr></time></div></div></header> <div class="uc"> No Page Content</div></article></section></main> <footer><a href=https://src.feather.wiki/#versions>JavaScript required to edit</a></footer>  </body> </html>
+{b=b.target.files;0<b.length&&c(b[0])}}>`;document.body.appendChild(a);a.click();document.body.removeChild(a)};FW.ready(()=>{Eb(FW.state);Fb(FW.state,FW.emitter)});FW._view=Aa;FW.mount("body");window.addEventListener("beforeunload",a=>{if(FW.state.changed)return a.preventDefault(),a.returnValue="Lose unsaved changes?"},{capture:!0})})(); </script>  </head> <body> <main> <div class="sb"> <span class="db"><a href="?" class="t">JoRap's Wiki</a></span> <p class="pb">Sustainable Online Publishing Workflow</p>  <nav class="">  <ul> <li> <details> <summary><a href="#page=home" class="">Home</a></summary> <ul><li> <a href="#page=subpage" class="">Subpage</a></li></ul></details></li> <li><a href="#page=a">All Pages</a></li></ul></nav></div> <section> <article> <header> <div class="r ns"> <h1 class="c" id="page=home">Home</h1> <div class="c w14 tr"> <time datetime="2024-03-07T00:37:11.303Z"> <abbr title="Created: 3/7/2024, 8:37:03 AM">3/7/2024, 8:37:11 AM</abbr></time></div></div></header> <div class="uc"> No Page Content</div></article><article> <header> <a href="#page=home">Home</a> / <div class="r ns"> <h1 class="c" id="page=subpage">Subpage</h1> <div class="c w14 tr"> <time datetime="2024-03-07T16:49:19.214Z"> <abbr title="Created: 3/8/2024, 12:49:12 AM">3/8/2024, 12:49:19 AM</abbr></time></div></div></header> <div class="uc"> No Page Content</div></article></section></main> <footer><a href=https://src.feather.wiki/#versions>JavaScript required to edit</a></footer>  </body> </html>
